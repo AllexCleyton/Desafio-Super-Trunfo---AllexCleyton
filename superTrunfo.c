@@ -8,10 +8,11 @@ int main() {
 
     //Coleta de dados da carta 1
     printf("Digite uma letra de 'A' a 'H'(representando um dos oito estados):\n");
-    scanf("%c", &estado);
+    scanf(" %c", &estado);
+    getchar(); //Consome a nova linha
     
     printf("Digite a letra do estado seguida de um numero de 01 a 04 (ex: A01, B03):\n");
-    scanf("%c", &codigoCarta);
+    scanf(" %s", codigoCarta);
 
     printf("Digite o nome da cidade(se caso composto, use apenas o primeiro):\n");
     scanf("%s", cidade);
@@ -31,10 +32,11 @@ int main() {
     //Coleta de dados das cartas 2]
     printf("Segunda carta:\n");
     printf("Digite uma letra de 'A' a 'H'(representando um dos oito estados):\n");
-    scanf("%c", &estado2);
+    scanf(" %c", &estado2);
+    getchar(); //Consome a nova linha
     
     printf("Digite a letra do estado seguida de um numero de 01 a 04 (ex: A01, B03):\n");
-    scanf("%c", &codigoCarta2);
+    scanf(" %s", codigoCarta2);
 
     printf("Digite o nome da cidade(se caso composto, use apenas o primeiro):\n");
     scanf("%s", cidade2);
@@ -53,19 +55,19 @@ int main() {
 
     //Apresentacao das cartas na tela
     printf("Carta 1: \n");
-    printf("Estado: %s \n", estado);
-    printf("Codigo: %c \n", codigoCarta);
-    printf("Nome da cidade: %s \n", cidade);
-    printf("Populacao: %d \n", populacao);
-    printf("Area: %f \n", area);
-    printf("PIB: %f \n", pib);
+    printf("Estado: %c\n", estado);
+    printf("Codigo: %s\n", codigoCarta);
+    printf("Nome da cidade: %s\n", cidade);
+    printf("Populacao: %d\n", populacao);
+    printf("Area: %f\n", area);
+    printf("PIB: %f\n", pib);
     printf("Numero de pontos turisticos: %d", pontosTuristicos);
     printf(" \n ");
 
     printf("Carta 2:\n");
-    printf("Estado:%s\n", estado2);
-    printf("Codigo:%c\n", codigoCarta2);
-    printf("Nome da cidade:%s \n", cidade2);
+    printf("Estado:%c\n", estado2);
+    printf("Codigo:%s\n", codigoCarta2);
+    printf("Nome da cidade:%s\n", cidade2);
     printf("Populacao:%d\n", populacao2);
     printf("Area:%f\n", area2);
     printf("PIB:%f\n", pib2);
